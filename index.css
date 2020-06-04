@@ -743,11 +743,11 @@ div button.minus{
 .item_image img{
     display:table;
     margin:auto;
-    width:500px;
-    height:300px;
+    width:auto;
+    height:auto;
     margin-top:10px;
     background-color:rgb(170, 131, 22);
-    max-width: 300px;
+    max-width: 600px;
     max-height:300px;
 }
 
