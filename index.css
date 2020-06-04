@@ -1,0 +1,791 @@
+body {
+    background: #141414;
+}
+/* 
+===================================================================
+===================================================================
+LOGIN 
+===================================================================
+===================================================================
+*/
+
+#loginBox{
+    position: relative;
+    width: 32vw;
+    height: 75vh;
+    display:block;
+    margin:auto;
+    margin-top:9vh;
+    background: rgba(45, 46, 46, 0.9);
+    mix-blend-mode: normal;
+    border-radius: 50px;
+    box-shadow: 15px 15px 4px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+position: relative;
+width: 100%;
+height: 16.96vh;
+top: 10vh;
+
+
+font-family: 'Montserrat Alternates', 'Arial', Times, serif;
+font-style: normal;
+font-weight: normal;
+font-size: 50px;
+line-height: 61px;
+display: table;
+margin:auto;
+align-items: center;
+text-align: center;
+
+color: #F7FCFC;
+}
+
+span{
+    position:absolute;
+    margin-left: auto;
+    margin-right: auto;
+    right: 0;
+    left: 0;
+    text-align: center;
+    margin-top:5vh;
+    font-size:22px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    color:red;
+}
+
+#usernameInput {
+position: relative;
+width: 80%;
+height:10vh;
+display:table;
+margin:auto;
+margin-top: 10vh;
+background: rgba(20, 20, 20, 0.01);
+border: 2px solid #F49F38;
+box-sizing: border-box;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 50px;
+font-family: Arial, Helvetica, sans-serif;
+font-size:5vh;
+color:white;
+text-align: center;
+outline:none;
+
+}
+#passwordInput {
+position: relative;
+width: 80%;
+height:10vh;
+display:table;
+margin:auto;
+margin-top: 2vh;
+background: rgba(20, 20, 20, 0.01);
+border: 2px solid #F49F38;
+box-sizing: border-box;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 50px;
+font-family: Arial, Helvetica, sans-serif;
+font-size:5vh;
+color:white;
+text-align: center;
+outline:none;
+
+}
+
+#loginButton {
+position: relative;
+width: 10vw;
+height: 10vh;
+margin:auto;
+margin-top:2vh;
+
+background: #292929;
+border: 4px solid #F49F38;
+box-sizing: border-box;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 50px;
+
+font-family: Arial, Helvetica, sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 5.5vh;
+display: table;
+align-items: center;
+text-align: center;
+outline:none;
+
+color: #F7FCFC;
+}
+
+#loginButton:active{
+    background-color: #141414;
+}
+
+/* 
+===================================================================
+===================================================================
+Main Div/search
+===================================================================
+===================================================================
+*/
+#mainDiv{
+    position: relative;
+    width: 80%;
+    height: 10vh;
+    display:table;
+    margin:auto;
+    margin-top:40vh;
+}
+
+.searched{
+    margin-top: 5vh !important;
+}
+
+#searchItems {
+    position: relative;
+    width: 514.87px;
+    height: 10vh;
+    display:table;
+    margin:auto;
+    text-align:center;
+}
+
+#searchBar {
+    position: relative;
+    width: 50%;
+    height:100%;
+    max-height:50px;
+    background: rgba(20, 20, 20, 0.5);
+    border: 2px solid #F49F38;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding-left: 10px;
+    color:white;
+    outline:none;
+    font-size:20px;
+
+}
+
+.searchScreenButton {
+    position: relative;
+    width:50px;
+    height:50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    align-items: center;
+    text-align: center;
+    margin-left: 1vw;
+    background: rgba(20, 20, 20, 0.5);
+    border: 2px solid #F49F38;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 100px;
+    outline:none;
+    color:white;
+}
+
+.searchScreenButton:hover, #searchBar:hover{
+    background-color:rgb(0, 0, 0);
+    cursor:pointer;
+}
+
+#searchFilters {
+    margin-left: 90%;
+    float:right;
+    max-width:10%;
+    font-size:1vw;
+    color:white;
+}
+
+#searchFilters {
+    position:absolute;
+    max-width: 100%;
+    max-height:10vh;
+    z-index:1;
+}
+
+#searchFilters label{
+    position:relative;
+    display:flex;
+    margin-top:2vh;
+    width:100px;
+    /* max-width:10vh; */
+    max-height:10vh;
+    color:black;
+    font-family: 'Montserrat';
+    font-size: 15px;
+    font-weight: 700;
+    background-color:rgb(244, 159, 56);
+}
+
+/* 
+===================================================================
+===================================================================
+Results 
+===================================================================
+===================================================================
+*/
+#searchResults {
+    display:table;
+    margin:auto;
+    margin-top:2vh;
+    width:80vw;
+    overflow-y:scroll;
+}
+.result{
+    display:inline-block;
+    margin:10px;
+}
+
+.button_result{
+    width: 300px;
+    height: 30px;
+    font-weight: 900;
+    background-color:#F49F38;
+    border-radius:50px;
+    border: 2px solid black;
+    outline:none;
+}
+.button_result:active{
+    background-color:black;
+    color:white;
+}
+.result_info{
+    position:relative;
+    display:table;
+    margin:auto;
+    top:-10px;
+    height:190px;
+    width:290px;
+    overflow:hidden;
+}
+
+.result_info_background{
+    position:absolute;
+    display:table;
+    margin:auto;
+    top:0px;
+    height:190px;
+    width:290px;
+    background-color:#F49F38;
+    z-index: -1;
+    border-radius: 0px 0px 20px 20px;
+}
+.result img{
+    position:absolute;
+    right:10px;
+    bottom:30px;
+    width:120px;
+    height:150px;
+    background-color:black;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.result_text{
+    position:relative;
+    top:20px;
+    left:5px;
+    width:110px;
+    max-width:110px;
+    color:white;
+}
+
+.result_text label{
+    display:table;
+    color:#141414;
+    font-weight: 900;
+    width:110px;
+    margin-top:5px;
+}
+
+.profile_link {
+    position:absolute;
+    right: 15px;
+    bottom: 3px;
+    padding:3px;
+    color:white;
+    background-color:#292929;
+    z-index: 1;
+}
+
+.profile_link:active{
+    color:blue;
+}
+
+/* 
+===================================================================
+===================================================================
+Profile
+===================================================================
+===================================================================
+*/
+
+#profile .space{
+    position:absolute;
+    display:table;
+    margin:auto;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    margin:auto;
+    text-align:center;
+    width:90vw;
+    height: 90vh;
+    
+}
+#profile .file{
+    position:absolute;
+    left:0;
+    height:90vh;
+    width: 45vw;
+}
+
+.voltar{
+    position:absolute;
+    height:80px;
+    top:0;
+    left:-20px;
+    margin:auto;
+    width:50px;
+    color:white;
+    font-weight: 900;
+    font-size:50px;
+    line-height:80px;
+    cursor:pointer;
+    transition: background-color 0.6s ease;
+}
+
+.voltar:hover{
+    background-color: #F49F38;
+}
+
+#profile .slideshow .left, .right{
+    position:absolute;
+    height:80px;
+    top:0;
+    bottom:0;
+    margin:auto;
+    width:50px;
+    color:white;
+    text-shadow: 2px 2px 2px black; 
+    font-weight: 900;
+    font-size:50px;
+    line-height:80px;
+    cursor:pointer;
+    transition: background-color 0.6s ease;
+}
+
+#profile .slideshow .left:hover, .right:hover, .voltar:hover .active{
+    background-color: #71717175;
+    user-select: none;
+    
+}
+#profile .slideshow img{
+    position:absolute;
+    left:0;
+    top:0;
+    margin:auto;
+    text-align: center;
+    width:100%;
+    height:100%;
+    border-radius: 20px;
+    border: 5px solid #F49F38;
+}
+#profile .slideshow .left{
+    left:10px;
+}
+#profile .slideshow .right{
+    right:0;
+    margin-right:auto;
+    
+}
+.dots {
+    position:absolute;
+    height:20px;
+    width:36.5vw;
+    left:0;
+    right:0;
+    bottom:-50px;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+  
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.file label{
+    display:table;
+    margin-top:10px;
+    margin-left:20px;
+    font-weight: 900;
+    font-size:3vh;
+}
+
+.file img{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+
+.foto {
+    position:absolute;
+    right:25px;
+    top:52px;
+    z-index: 0;
+    width:270px;
+    height:280px;
+}
+
+.person_pic{
+    position: absolute;
+    transform: rotate(-10deg);
+    width:300px;
+    height:300px;
+    max-width:300px;
+    max-height:300px;
+    /* max-width:265px;
+    max-height:270px; */
+}
+
+.paper{
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+@media (min-aspect-ratio: 2/3){
+    .person_pic{
+        transform: rotate(-20deg) scale(0.9) skew(-16deg);
+    }
+
+    .foto{
+        top:50px;
+        right:-8px;
+    }
+}
+@media (min-aspect-ratio: 16/9){
+    .person_pic{
+        transform: rotate(-10deg) scale(1.3);
+    }
+
+    .foto{
+        top:80px;
+        right:50px;
+    }
+}
+
+.more_info {
+    position:absolute;
+    display:inline-block;
+    width:100%;
+    height:30%;
+    left:0;
+    bottom:65px;
+    z-index:2;
+    overflow-y: scroll;
+}
+
+.basic_info{
+    position: absolute;
+    left:0;
+    top:55px;
+    z-index:2;
+    line-height: 13px;
+}
+
+.basic_info .title{
+    font-size:18px;
+    font-family: 'Montserrat';
+    font-weight: 900;
+}
+
+.basic_info .info{
+    font-size:15px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+}
+
+.friends_info, .others_info, .plates_info{
+    position:absolute;
+    display:inline-block;
+    line-height: 20px;
+    width:30%;
+}
+
+.friends_info{
+    left:0;
+}
+.others_info{
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+}
+.plates_info{
+    right:0;
+    top:0px;
+}
+
+.friends_info label, .others_info label {
+    line-height: 14.5px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size:15px;
+}
+
+.plates_info label{
+    display: table;
+    margin:auto;
+    line-height:14px;
+    font-family: 'Montserrat';
+    font-size:12px;
+}
+
+.placa{
+    color:red;
+    margin-top:10px !important;
+    margin-bottom:10px !important;
+}
+/* 
+===================================================================
+===================================================================
+Profile Edit and Create
+===================================================================
+===================================================================
+*/
+#profileEdit .space{
+    position:absolute;
+    left:0;
+    right:0;
+    margin:auto;
+    text-align: center;
+    height:90vh;
+    width: 90vw;
+}
+
+#profileEdit .file{
+    position:absolute;
+    left:0;
+    height:90vh;
+    width: 45vw;
+}
+#profileEdit .voltar{
+    left:-50px;
+}
+#profileEdit .person_pic{
+    position: absolute;
+    z-index: 1;
+}
+.profile_images{
+    position:absolute;
+    right:0;
+    height:100%;
+    width: 45vw;
+}
+#profileEdit .basic_info{
+    margin-left:10px;
+}
+#profileEdit .basic_info label{
+    display: table;
+    margin:auto;
+    margin-top:8px;
+}
+.basic_info input{
+    display: inline-block;
+    margin-top:8px;
+    text-align: center;
+}
+
+.more_info .others_info, .friends_info, .plates_info{
+    width:30%;
+    height:100%;
+}
+.more_info .friends_info{
+    text-align: left;
+}
+.more_info .others_info{
+    text-align: center;
+}
+.more_info textarea{
+    white-space: pre-wrap;
+    margin-top:10px;
+    font-size: 18px;
+    line-height: 18px;
+    height:100%;
+    padding-top: 10px;
+    text-align:left;
+}
+.plates_info input{
+    text-align: center;
+    font-size:18px;
+    margin-top:-18px;
+}
+
+.more_info .title{
+    display:table;
+    font-size:16px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+}
+
+.plates_info .plus{
+    position: absolute;
+    right:0;
+    top:0;
+}
+.buttons {
+    position: absolute;
+    bottom:0px;
+    width:100%;
+    display:table;
+    margin:auto;
+}
+button.plus{
+    position:fixed;
+    top:50px;
+    margin-right:10px;
+    background-color:#F49F38;
+    border:none;
+    width:50px;
+    height:22px;
+    outline:none;
+}
+
+div button.minus{
+    float:left;
+    margin-bottom:-5px;
+    width:50px;
+    height:30px;
+    background-color:#F49F38;
+    border:none;
+    outline:none;
+}
+
+.minus:hover, .plus:hover{
+    background-color: rgb(243, 138, 10);
+}
+
+.item_placa {
+    margin-top:10px;
+    background-color: #14141491;
+    margin-bottom:10px;
+}
+
+.buttons button{
+    border:none;
+    background-color:#F49F38;
+    margin:2px;
+    width:60px;
+    height:20px;
+    outline: none;
+    cursor:pointer;
+    font-family: 'Montserrat';
+    font-weight: 700;
+}
+
+.delete{
+    display:table;
+    background-color:red;
+    margin-right: 10px;
+}
+
+.buttons button:hover{
+    background-color: rgb(243, 138, 10);
+}
+.profile_images{
+    position:absolute;
+    overflow-y: scroll;
+    height:80% !important;
+    bottom:50px;
+}
+
+.page2{
+    position: absolute;
+    height: 100%;
+}
+
+
+.item_image{
+    margin-top:20px;
+    padding-top:20px;
+    width:100%;
+    height: 80%;
+    text-align: left;
+}
+
+.item_image:hover{
+    background-color: rgba(92, 91, 91, 0.308);
+}
+
+.item_image input{
+    width:90%;
+}
+.item_image img{
+    display:table;
+    margin:auto;
+    width:300px;
+    height:300px;
+    margin-top:10px;
+    background-color:rgb(170, 131, 22);
+    max-width: 300px;
+    max-height:300px;
+}
+
+.item_image label{
+    display:table;
+    margin: 20px auto 0px auto;
+    padding-bottom: 20px;
+    font-weight: 700;
+    font-size:18px;
+}
+
+
+/* 
+===================================================================
+===================================================================
+Scrollbar
+===================================================================
+===================================================================
+*/
+
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+    height:10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #F49F38;
+    border-radius: 10px;
+}
+
+.hidden {
+    display:none !important;
+}
