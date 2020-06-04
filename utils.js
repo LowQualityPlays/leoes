@@ -112,45 +112,45 @@ function showPage(page){
 
 const Urls = {
     create : { 
-        Url : 'http://localhost:3333/people',
+        Url : 'https://backendleoes.herokuapp.com/people',
         type : 'POST'
     },
     list : { 
-        Url : 'http://localhost:3333/people',
+        Url : 'https://backendleoes.herokuapp.com/people',
         type : 'GET'
     },
     find : { 
-        Url : 'http://localhost:3333/search', 
+        Url : 'https://backendleoes.herokuapp.com/search', 
         type : 'GET'
     },
     findinField : { 
-        Url : 'http://localhost:3333/searchField',
+        Url : 'https://backendleoes.herokuapp.com/searchField',
         type : 'GET'
     },
     getById :{
-        Url : 'http://localhost:3333/getById',
+        Url : 'https://backendleoes.herokuapp.com/getById',
         type : 'GET'
     },
     update :{
-        Url : 'http://localhost:3333/updateOrAdd',
+        Url : 'https://backendleoes.herokuapp.com/updateOrAdd',
         type : 'POST',
         dataType : 'json',
         contentType: "application/json"
     },
     delete :{
-        Url : 'http://localhost:3333/delete',
+        Url : 'https://backendleoes.herokuapp.com/delete',
         type : 'POST',
         dataType : 'json',
         contentType: "application/json"
     },
     login : {
-        Url : 'http://localhost:3333/login',
+        Url : 'https://backendleoes.herokuapp.com/login',
         type : 'POST',
         dataType : 'json',
         contentType: "application/json"
     },
     check : {
-        Url : 'http://localhost:3333/check',
+        Url : 'https://backendleoes.herokuapp.com/check',
         type : 'GET',
         dataType : 'json',
         contentType: "application/json"
