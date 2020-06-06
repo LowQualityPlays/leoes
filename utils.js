@@ -1,5 +1,11 @@
 $(document).ready(() => {
     radioButtons()
+
+    $('#searchBar').on("keyup", function(event) {
+        if (event.keyCode === 13) {
+            $('#searchButton').click();
+          }
+    })
 })
 const admin = 4
 
@@ -389,7 +395,7 @@ function populatePage(data,page){
         clearResults()
         return noResults()
     }
-    const {rg = '',name = '',contact = '',org= '', adress = '', avatar_url= 'https://i.imgur.com/5MVu5DZ.jpg',plates = [{}],images = [],friends = [], others = []} = data
+    const {rg = '',name = '',contact = '',org= '', adress = '', avatar_url= '',plates = [{}],images = [],friends = [], others = []} = data
     $(`#${page}`).find('.edit').attr('id', data._id)
     $(`#${page}`).find('.cancel').attr('id', data._id)
     $(`#${page}`).find('.voltar').attr('id', data._id)
