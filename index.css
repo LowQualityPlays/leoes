@@ -509,7 +509,7 @@ Profile
     width:100%;
     height:30%;
     left:0;
-    bottom:65px;
+    bottom:50px;
     z-index:2;
     overflow-y: scroll;
 }
@@ -517,7 +517,7 @@ Profile
 .basic_info{
     position: absolute;
     left:0;
-    top:55px;
+    top:5px;
     z-index:2;
     line-height: 13px;
 }
@@ -626,8 +626,9 @@ Profile Edit and Create
 }
 
 .more_info .others_info, .friends_info, .plates_info{
-    width:30%;
-    height:100%;
+    margin-top:50px;
+    width:20%;
+    height:600px;
 }
 .more_info .friends_info{
     text-align: left;
@@ -652,7 +653,7 @@ Profile Edit and Create
 
 .more_info .title{
     display:table;
-    font-size:16px;
+    font-size:15px;
     font-family: 'Montserrat';
     font-weight: 700;
 }
@@ -671,7 +672,7 @@ Profile Edit and Create
 }
 button.plus{
     position:fixed;
-    top:50px;
+    top:20px;
     margin-right:10px;
     background-color:#F49F38;
     border:none;
