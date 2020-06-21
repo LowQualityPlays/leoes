@@ -477,17 +477,17 @@ Profile
     -moz-user-select: none;
     -webkit-user-select: none;
 }
-@media (min-aspect-ratio: 2/3){
+@media (max-width:2000px){
     .person_pic{
-        transform: rotate(-20deg) scale(0.9) skew(-16deg);
+        transform: rotate(-10deg) scale(1.2);
     }
 
     .foto{
-        top:50px;
-        right:-8px;
+        top:62px;
+        right:72px;
     }
 }
-@media (min-aspect-ratio: 16/9){
+@media (max-width:1600px){
     .person_pic{
         transform: rotate(-10deg) scale(1.1);
     }
