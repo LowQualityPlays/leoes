@@ -499,16 +499,6 @@ Profile
     }
 
     .foto{
-        top:80px;
-        right:50px;
-    }
-}
-@media (max-width: 1400px){
-    .person_pic{
-        transform: rotate(-10deg) scale(0.9);
-    }
-
-    .foto{
         top:20px;
         right:10px;
     }
