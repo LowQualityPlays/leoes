@@ -642,6 +642,7 @@ Profile Edit and Create
 }
 .more_info textarea{
     white-space: pre-wrap;
+    width:160px;
     margin-top:10px;
     font-size: 18px;
     line-height: 18px;
@@ -651,8 +652,9 @@ Profile Edit and Create
 }
 .plates_info input{
     text-align: center;
-    font-size:18px;
+    font-size:14px;
     margin-top:-18px;
+    width:100px;
 }
 
 .more_info .title{
