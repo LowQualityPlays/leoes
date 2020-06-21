@@ -485,17 +485,17 @@ Profile
 }
 @media (min-aspect-ratio: 16/9){
     .person_pic{
-        transform: rotate(-10deg) scale(1.0);
+        transform: rotate(-10deg) scale(1.1);
     }
 
     .foto{
-        top:40px;
-        right:10px;
+        top:60px;
+        right:40px;
     }
 }
 @media (max-width: 1400px){
     .person_pic{
-        transform: rotate(-10deg) scale(0.9);
+        transform: rotate(-10deg) scale(1.0);
     }
 
     .foto{
