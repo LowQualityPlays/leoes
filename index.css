@@ -339,6 +339,10 @@ Profile
     height: 90vh;
     
 }
+
+.profile_images .edit{
+    position:fixed;
+}
 #profile .file{
     position:absolute;
     left:0;
