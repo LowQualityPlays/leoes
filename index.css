@@ -566,10 +566,10 @@ Profile
 }
 
 .friends_info label, .others_info label {
-    line-height: 14.5px;
+    line-height: 15px;
     font-family: 'Montserrat';
     font-weight: 700;
-    font-size:15px;
+    font-size:14px;
 }
 
 .plates_info label{
